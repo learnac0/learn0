@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        {% load static %}
+        <link rel="stylesheet"  href="{%  static  'css/style.css'  %}">
+    </head>
+    <body>
+        <form action="{% url 'saveuser' %}" method="post">
+            {% csrf_token %}
+            <label class="button__text" for="username">Username: </label>
+            <input type="text"| id="username" name="username" class="login__input"><br>
+            <label class="button__text"for="password">Password: </label>
+            <input type="password" id="password" name="password" class="login__input"><br>
+            <input type="Submit" id="signup" value="Sign up" class="button login__submit">
+        </form>
+    </body>
+</html>
