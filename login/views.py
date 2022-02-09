@@ -12,6 +12,9 @@ def dino(request):
 def game(request):
     return render(request, 'game.html')
 
+def mario(request):
+    return render(request, 'mario.html')
+
 def signup(request):
     return render(request, 'signup.html')
 

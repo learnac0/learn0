@@ -6,6 +6,7 @@ urlpatterns = [
     #path('login/', views.login),
     path('dino/', views.dino),
     path('', views.game),
+    path('mario/', views.mario),
     #path('signup/', views.signup),
     #path('saveuser/', views.saveuser, name='saveuser'),
     #path('auth/', views.auth, name='auth'),
