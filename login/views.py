@@ -6,8 +6,11 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from .models import userdata
 # Create your views here.
-def login(request):
-    return render(request, 'login.html')
+def dino(request):
+    return render(request, 'dino.html')
+
+def game(request):
+    return render(request, 'game.html')
 
 def signup(request):
     return render(request, 'signup.html')
