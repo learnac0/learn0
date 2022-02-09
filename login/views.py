@@ -10,6 +10,9 @@ def dino(request):
     return render(request, 'dino.html')
 
 def game(request):
+    return render(request, 'missile.html')
+
+def gravity(request):
     return render(request, 'game.html')
 
 def mario(request):
