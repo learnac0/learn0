@@ -12,6 +12,9 @@ def dino(request):
 def game(request):
     return render(request, 'missile.html')
 
+def coil(request):
+    return render(request, 'coil.html')
+
 def gravity(request):
     return render(request, 'game.html')
 
