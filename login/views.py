@@ -15,6 +15,9 @@ def game(request):
 def coil(request):
     return render(request, 'coil.html')
 
+def tzfe(requests):
+    return render(requests, 'tzfe.html')
+
 def gravity(request):
     return render(request, 'game.html')
 

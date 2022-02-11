@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Clear Sans";
+    src: url("ClearSans-Light-webfont.43f90ca76c35.eot");
+    src: url("ClearSans-Light-webfont.43f90ca76c35.eot?#iefix") format("embedded-opentype"),
+         url("ClearSans-Light-webfont.f6a8d8d7f680.svg#clear_sans_lightregular") format("svg"),
+         url("ClearSans-Light-webfont.930193fff909.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("ClearSans-Regular-webfont.207557cd41a5.eot");
+    src: url("ClearSans-Regular-webfont.207557cd41a5.eot?#iefix") format("embedded-opentype"),
+         url("ClearSans-Regular-webfont.067209713c5d.svg#clear_sansregular") format("svg"),
+         url("ClearSans-Regular-webfont.051b44622bff.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("ClearSans-Bold-webfont.92a9c29a5c67.eot");
+    src: url("ClearSans-Bold-webfont.92a9c29a5c67.eot?#iefix") format("embedded-opentype"),
+         url("ClearSans-Bold-webfont.637ed43d88cc.svg#clear_sansbold") format("svg"),
+         url("ClearSans-Bold-webfont.8e5574289655.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
