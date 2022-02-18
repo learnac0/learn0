@@ -10,7 +10,7 @@ urlpatterns = [
     #path('mario/', views.mario),
     #path('coil/', views.coil),
     #path('2048/', views.tzfe),
-    #path('signup/', views.signup),
+    path('signup/', views.signup, name='signup'),
     #path('saveuser/', views.saveuser, name='saveuser'),
     path('auth/', views.auth, name='auth'),
 ]
