@@ -1,18 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        {% load static %}
-        <link rel="stylesheet"  href="{%  static  'css/style.css'  %}">
-    </head>
-    <body>
+<head>
+  <title>Sign Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1' %}">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'boot/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'boot/css/bootstrap-grid.min.css' %}">
+  <link rel="stylesheet" href="{% static 'boot/css/bootstrap-reboot.css' %}">
+  <link rel="stylesheet" href="{% static 'boot/css/bootstrap-reboot.min.css' %}">
+  <link rel="stylesheet" href="{% static 'boot/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'boot/css/bootstrap-grid.css' %}">
+  <script src="{% static 'boot/js/bootstrap.bundle.js' %}"></script>
+  <script src="{% static 'boot/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'boot/js/bootstrap.js' %}"></script>
+  <script src="{% static 'boot/js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+    <div class="container p-3 my-3 bg-primary text-white" style="width: 45%;">
+        <h2>Sign Up</h2>
         <form action="{% url 'saveuser' %}" method="post">
-            {% csrf_token %}
-            <label class="button__text" for="username">Username: </label>
-            <input type="text"| id="username" name="username" class="login__input"><br>
-            <label class="button__text"for="password">Password: </label>
-            <input type="password" id="password" name="password" class="login__input"><br>
-            <input type="Submit" id="signup" value="Sign up" class="button login__submit">
-        </form>
-    </body>
-</html>
+          {% csrf_token %}
+            <div class="form-group">
+              <label for="username">Enter User Name</label>
+              <input type="text" name="username" class="form-control" id="username" placeholder="User Name">
+              
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Enter Password</label>
+              <input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <label for="exampleInputPassword1">Confirm Password</label>
+              <input type="password" name="passc" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Sign Up</button><br><br>
+            </div>
+            
+          </form>
+    </div>
+
+</body>

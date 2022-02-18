@@ -5,6 +5,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
 from .models import userdata
+
+from django.contrib.auth import authenticate, login as auth_login
 # Create your views here.
 def dino(request):
     return render(request, 'dino.html')
@@ -52,15 +54,12 @@ def saveuser(request):
 
 def auth(request):
     if request.method == 'POST':
-        user = request.POST.get('user')
-        pas = request.POST.get('password')
-    usr = userdata.objects.all()
-    found = False
-    for i in usr:
-        if user == i.user and pas == i.password:
-            found = True
-            break
-    if found == True:
-        return render(request, 'loggedin.html')
-    else:
-        return render(request, 'wrong.html')
+        username = request.POST.get('username')
+        pas = request.POST.get('pas')
+        user = authenticate(username=username, password=pas)
+        if user is not None:
+            if user.is_active:
+                auth_login(request, user)
+                return render(request, 'todo.html', None)
+        else:
+            return render(request, 'wp.html', None)
