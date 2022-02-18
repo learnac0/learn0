@@ -5,7 +5,7 @@ from django.urls import URLPattern, include, path
 urlpatterns = [
     #path('login/', views.login),
     #path('dino/', views.dino),
-    path('', views.game),
+    path('', views.login),
     #path('1/', views.gravity),
     #path('mario/', views.mario),
     #path('coil/', views.coil),

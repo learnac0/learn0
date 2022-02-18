@@ -8,6 +8,10 @@ from .models import userdata
 
 from django.contrib.auth import authenticate, login as auth_login
 # Create your views here.
+def login(request):
+    return render(request, 'login.html')
+
+
 def dino(request):
     return render(request, 'dino.html')
 
